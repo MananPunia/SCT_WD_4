@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --background: #000430;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+    --secondarybackground: #171c48;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin: 120px auto 0 auto;
+    max-width: 550px;
+}
+
+.stats-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--purple);
+    padding: 30px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.stat-detail {
+    width: 100%;
+}
+
+#progress-bar {
+    width: 90%;
+    height: 10px;
+    background-color: var(--secondarybackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#progress {
+    width: 0%;
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#numbers {
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: var(--secondarybackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--purple);
+    font-size: 26px;
+    line-height: 1;
+    font-weight: bold;
+    color: var(--text);
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    flex-shrink: 0;
+}
+
+#task-list {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem {
+    display: flex;
+    background-color: var(--secondarybackground);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.task input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.taskItem img {
+    width: 23px;
+    height: 23px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.completed p {
+    text-decoration: line-through;
+    color: var(--teal);
+}
+
+.overdue p {
+    color: red;
+    text-decoration: line-through;
+}
+
+/* YEP */
