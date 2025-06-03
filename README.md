@@ -27,7 +27,9 @@ A simple and interactive to-do list app with date & time reminders, progress tra
 
 ## 📸 Screenshot
 ![image](https://github.com/user-attachments/assets/a02eb768-35d5-495e-9bbe-92e64aeb041c)
-Note: Complete All the Tasks to get that DOPAMIIINNe Hit
+
+                  Note: Complete All the Tasks to get that DOPAMIIINNe Hit👇
+
 ![image](https://github.com/user-attachments/assets/a6645e62-5555-4dad-a1c8-6051c0ac29f1)
 
 
